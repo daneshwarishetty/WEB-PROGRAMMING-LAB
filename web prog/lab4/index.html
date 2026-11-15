@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country and Capital Selector</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Country and Capital</h1>
+    <p>Select a country to see its capital:</p>
+
+    <select id="country" onchange="showCapital()">
+      <option value="">-- Select a country --</option>
+      <option value="New Delhi">India</option>
+      <option value="Washington, D.C.">United States</option>
+      <option value="Tokyo">Japan</option>
+      <option value="Paris">France</option>
+      <option value="Canberra">Australia</option>
+    </select>
+
+    <span id="capital" aria-live="polite"></span>
+  </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Product Offers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">  LAB EXPERIMENT 02</p>
+    <h1>Exclusive Product Offers</h1>
+    <p class="intro">Explore useful gadgets, compare their details and find your next favourite tech essential.</p>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <div>
+        <h2>Product catalogue</h2>
+        <p>Product information displayed using the HTML <code>&lt;table&gt;</code> tag.</p>
+      </div>
+      <label class="search-wrap">
+        <span class="sr-only">Search products</span>
+        <input type="search" id="searchInput" placeholder="Search name or brand...">
+      </label>
+    </section>
+
+    <div class="table-shell">
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Product</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="image-cell"><img src="images/smartphone.jpg" alt="Blue and purple display smartphone"></td>
+            <td><strong>Nova X5 Smartphone</strong><span class="sub">Smartphone · 128 GB</span></td>
+            <td>NovaTech</td>
+            <td class="price">₹18,999</td>
+            <td><p>A stylish smartphone designed for everyday performance. It features a bright, colourful display, a slim body and generous storage for photos, apps and videos.</p><ul><li>6.6-inch Full HD+ display</li><li>128 GB internal storage</li><li>Dual camera system and long-lasting battery</li></ul></td>
+          </tr>
+          <tr>
+            <td class="image-cell"><img src="images/fitness-band.jpg" alt="Black fitness tracking band"></td>
+            <td><strong>FitPulse Smart Band</strong><span class="sub">Wearable · Fitness tracker</span></td>
+            <td>FitPulse</td>
+            <td class="price">₹2,499</td>
+            <td><p>A lightweight fitness companion that helps you keep track of your daily activity. Its simple display makes health and workout information easy to check while you are on the move.</p><ul><li>Heart-rate and step tracking</li><li>Sleep and activity monitoring</li><li>Water-resistant design with adjustable strap</li></ul></td>
+          </tr>
+          <tr>
+            <td class="image-cell"><img src="images/power-bank.jpg" alt="Black portable power bank"></td>
+            <td><strong>VoltGo 20K Power Bank</strong><span class="sub">Charging accessory · 20,000 mAh</span></td>
+            <td>VoltGo</td>
+            <td class="price">₹1,799</td>
+            <td><p>Stay powered throughout the day with this portable charging companion. Its compact design fits easily into a backpack, making it useful for travel, college and everyday use.</p><ul><li>20,000 mAh battery capacity</li><li>Multiple output ports</li><li>LED battery-level indicators</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="emptyMessage" class="empty" hidden>No matching products found. Try another search.</p>
+    </div>
+    <p class="note">* Product names, specifications and prices are sample details created for this lab exercise.</p>
+  </main>
+
+  <footer>Designed for Web Programming Lab Experiment 2 · <span id="year"></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

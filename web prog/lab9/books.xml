@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book id="1">
+    <title>Learning XML</title>
+    <price>450</price>
+  </book>
+  <book id="2">
+    <title>Web Basics</title>
+    <price>300</price>
+  </book>
+  <book id="3">
+    <title>JavaScript Essentials</title>
+    <price>550</price>
+  </book>
+  <book id="4">
+    <title>Introduction to HTML and CSS</title>
+    <price>400</price>
+  </book>
+</library>

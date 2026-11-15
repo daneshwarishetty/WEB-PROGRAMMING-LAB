@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A session-based welcome and logout page.">
+    <title>Daneshwari | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="index.html">Daneshwari<span>Session Portal</span></a>
+            <time id="startTime" class="start-time" hidden></time>
+        </header>
+
+        <section id="loginView" class="view login-view" aria-labelledby="loginTitle">
+            <div class="intro">
+                <p class="eyebrow">A fresh start</p>
+                <h1 id="loginTitle">Welcome<br><em>India</em></h1>
+                <p class="description">Enter your name to begin. Your session start time will be displayed on the welcome page.</p>
+            </div>
+
+            <form id="loginForm" class="name-form">
+                <label for="name">Your name</label>
+                <div class="input-row">
+                    <input id="name" name="name" type="text" autocomplete="name"
+                           placeholder="Type your name" maxlength="80" required>
+                    <button type="submit">Continue <span aria-hidden="true">→</span></button>
+                </div>
+                <p id="loginMessage" class="message" role="alert"></p>
+            </form>
+        </section>
+
+        <section id="welcomeView" class="view welcome-view" aria-labelledby="welcomeTitle" hidden>
+            <p class="eyebrow">You are signed in</p>
+            <h1 id="welcomeTitle">Hello, <em id="userName"></em>!</h1>
+            <p class="description">Your session is now active. Enjoy your visit, and log out when you are finished.</p>
+            <button id="logoutButton" class="logout-button" type="button">Log out</button>
+        </section>
+
+        <section id="logoutView" class="view logout-view" aria-labelledby="logoutTitle" hidden>
+            <p class="eyebrow">Session completed</p>
+            <h1 id="logoutTitle">Thank you,<br><em id="loggedOutName"></em>!</h1>
+            <p id="durationMessage" class="description"></p>
+            <a class="back-link" href="index.html">Start a new session</a>
+        </section>
+
+        <footer>
+            <span>Personal session portal</span>
+            <span id="footerStatus">Ready to begin</span>
+            <span class="credit">Created by Daneshwari Kuruvinashetty</span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

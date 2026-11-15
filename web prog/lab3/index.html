@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rangotsav | Cultural Festival Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">Celebrate art • culture • togetherness</div>
+      <h1>Rangotsav 2026</h1>
+      <p>Inter-Institute Cultural Festival · Registration Form</p>
+    </header>
+
+    <form id="registrationForm">
+      <p class="intro">
+        The stage is yours! Register your institute and participants for a joyful
+        celebration of music, dance, creativity and tradition.
+      </p>
+
+      <fieldset>
+        <legend>01 · Participant Details</legend>
+        <div class="grid">
+          <div class="field">
+            <label for="fullname">Full name *</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Enter participant's name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address *</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required>
+          </div>
+          <div class="field">
+            <label for="phone">Mobile number *</label>
+            <input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="field">
+            <label for="age">Age *</label>
+            <input id="age" name="age" type="number" min="15" max="80" placeholder="Your age" required>
+          </div>
+          <div class="field wide">
+            <span class="group-label">Gender</span>
+            <div class="choices">
+              <label><input type="radio" name="gender" value="Female"> Female</label>
+              <label><input type="radio" name="gender" value="Male"> Male</label>
+              <label><input type="radio" name="gender" value="Other"> Other</label>
+              <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>02 · Institute Information</legend>
+        <div class="grid">
+          <div class="field">
+            <label for="institute">Institute / college name *</label>
+            <input id="institute" name="institute" type="text" placeholder="Enter institute name" required>
+          </div>
+          <div class="field">
+            <label for="city">City *</label>
+            <input id="city" name="city" type="text" placeholder="Your city" required>
+          </div>
+          <div class="field wide">
+            <label for="course">Department / course</label>
+            <input id="course" name="course" type="text" placeholder="e.g. Computer Science">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>03 · Choose Your Events</legend>
+        <div class="grid">
+          <div class="field wide">
+            <span class="group-label">Event category * <span class="hint">(select at least one)</span></span>
+            <div class="choices">
+              <label><input type="checkbox" name="events" value="Solo singing"> Solo singing</label>
+              <label><input type="checkbox" name="events" value="Group dance"> Group dance</label>
+              <label><input type="checkbox" name="events" value="Instrumental music"> Instrumental music</label>
+              <label><input type="checkbox" name="events" value="Drama / skit"> Drama / skit</label>
+              <label><input type="checkbox" name="events" value="Fine arts"> Fine arts</label>
+              <label><input type="checkbox" name="events" value="Photography"> Photography</label>
+              <label><input type="checkbox" name="events" value="Fashion show"> Fashion show</label>
+              <label><input type="checkbox" name="events" value="Quiz"> Cultural quiz</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="participation">Participation type *</label>
+            <select id="participation" name="participation" required>
+              <option value="">-- Choose one --</option>
+              <option>Individual</option>
+              <option>Team</option>
+              <option>Both individual and team</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="teamSize">Number of team members</label>
+            <select id="teamSize" name="teamSize">
+              <option value="">Not applicable</option>
+              <option>2–5</option>
+              <option>6–10</option>
+              <option>11–15</option>
+              <option>16 or more</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>04 · Tell Us More</legend>
+        <div class="grid">
+          <div class="field wide">
+            <label for="message">Special requirements / message</label>
+            <textarea id="message" name="message" placeholder="Mention equipment, accessibility needs, performance details or any questions..."></textarea>
+          </div>
+          <div class="field wide">
+            <div class="choices">
+              <label><input type="checkbox" name="declaration" required> I confirm that the information provided is correct. *</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button class="submit" type="submit">Submit Registration ✨</button>
+        <button class="reset" type="reset">Reset Form</button>
+      </div>
+      <div id="confirmation" role="status" aria-live="polite">
+        Thank you! Your sample registration has been completed.
+      </div>
+      <footer>Rangotsav 2026 · Let every talent shine!</footer>
+    </form>
+  </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

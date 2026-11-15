@@ -1,0 +1,36 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f6ff;
+      margin: 0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #263b70;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #8796b8;
+      border-radius: 6px;
+      margin: 10px;
+    }
+
+    #capital {
+      display: inline-block;
+      margin: 10px;
+      color: #d12f63;
+      font-size: 22px;
+      font-weight: bold;
+    }

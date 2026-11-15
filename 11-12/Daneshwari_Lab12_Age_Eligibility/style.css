@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #24352f;
+    background: linear-gradient(135deg, #e6f4ed, #f8f3e8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.page {
+    width: 100%;
+    max-width: 520px;
+}
+
+.panel {
+    background: #ffffff;
+    border: 1px solid #dce9e1;
+    border-radius: 22px;
+    padding: 38px;
+    box-shadow: 0 18px 50px rgba(35, 75, 55, 0.12);
+}
+
+.eyebrow {
+    color: #398363;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #1e4c3b;
+    font-size: clamp(30px, 6vw, 40px);
+}
+
+.intro {
+    color: #687a71;
+    line-height: 1.6;
+    margin: 12px 0 28px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 18px 0 8px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #cbdcd1;
+    border-radius: 10px;
+    background: #fbfdfb;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #398363;
+    box-shadow: 0 0 0 3px rgba(57, 131, 99, 0.13);
+}
+
+button {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 25px;
+    background: #267653;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #1d6042;
+    transform: translateY(-1px);
+}
+
+.result {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.success {
+    color: #185d3d;
+    background: #e4f5eb;
+    border: 1px solid #b9e2c8;
+}
+
+.warning {
+    color: #8a4c16;
+    background: #fff2df;
+    border: 1px solid #f0d1a5;
+}
+
+.error {
+    color: #9b2525;
+    background: #fff0f0;
+    border: 1px solid #f0c3c3;
+}
+
+footer {
+    border-top: 1px solid #edf2ee;
+    margin-top: 30px;
+    padding-top: 18px;
+    color: #829087;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .panel {
+        padding: 26px 22px;
+    }
+}
